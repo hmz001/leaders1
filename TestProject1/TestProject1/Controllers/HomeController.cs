@@ -33,5 +33,39 @@ namespace TestProject1.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        private ReactionResult ElementReaction(Element firstElement, Element secondElement)
+        {
+            var result = new ReactionResult();
+            //do something
+            //if success
+            if (true)
+            {
+                result.Success = true;
+                result.Result = "CO2";
+            }
+            else {
+                result.Success = false;
+                result.Result = "These elements do not react with eachother";
+            }
+            return result;
+        }
+
+        private ReactionResult ElementReaction( List<Element> elements)
+        {
+            var result = new ReactionResult();
+            //do something
+            //if success
+            if (true)
+            {
+                result.Success = true;
+                result.Result = "CO2";
+            }
+            else
+            {
+                result.Success = false;
+                result.Result = "These elements do not react with eachother";
+            }
+            return result;
+        }
     }
 }
