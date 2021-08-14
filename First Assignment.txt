@@ -1,0 +1,3 @@
+Read the following instructions carefully before starting the project.
+Goal of project: 
+create a simple application to calculate the chimical reaction between 2 elements, and then print out the results in the consol.
